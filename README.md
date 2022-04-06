@@ -78,7 +78,7 @@ You can monitor the logs of build and app in Rehost Dashboard.
 ```
 rh app hot-reload
 ```
-Edit `/src/App.js` file and save to see the changes go live instantly.
+Edit `/src/components/HelloWorld.vue` file and save to see the changes go live instantly.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
