@@ -1,0 +1,8 @@
+version: 1
+
+label: '<username>.personal.template-vue'
+urls:
+  - "<username>.personal.vue:80"
+app_type: 'docker-compose'
+machines:
+  - "<username>.personal.vm"

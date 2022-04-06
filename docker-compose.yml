@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  template_vue:
+    image: template_vue
+    ports:
+      - 80:3000
+    command: "npm run dev"
+    environment: 
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: .
+      dockerfile: Dockerfile    
+    volumes:
+      - ./:/home/app
+      - /home/app/node_modules
