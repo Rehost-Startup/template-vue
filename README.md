@@ -47,26 +47,17 @@ git clone https://github.com/Rehost-Startup/template-vue.git
 ```
 2. Edit `rehostapp.yml` file:
 ```
-version: 1
 
-label: '<username>.personal.template-vue'
+label: '<username>/<team_name>/template-vue'
 urls:
-  - "<username>.personal.vue:80"
+  - "<username>-<team_name>-vue:80"
 app_type: 'docker-compose'
 machines:
-  - "<username>.personal.vm"
+  - "<username>/<team_name>/vm"
 ```
-Here, replace `<username>` with your Rehost Username.
+Here, replace `<username>` with your Rehost Username, and `<team_name>` with a team you created.
 
-3. On your VM instance, create a new file named `rehostmachine.yml` with the following content: 
-```
-version: 1
-
-label: '<username>.personal.gcp'
-memory: '2gb'
-disk: '256gb'
-``` 
-Next, run `rh machine save` followed by `rh machine up` to connect your VM instance to Rehost.
+3. On your VM instance, run `rh machine up` to connect your VM instance to Rehost. Enter a new machine name when prompted.
 
 4. Finally, run the following command on local machine to deploy the project:
 ```
